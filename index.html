@@ -1,0 +1,309 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#0073d5">
+    <meta name="msapplication-TileColor" content="#0073d5">
+    <meta name="description" content="">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Aldrik Ramaekers">
+    <meta property="og:title" content="Home — Aldrik Ramaekers">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aldrik.dev/">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://aldrik.dev/images/opengraph/default.png">
+    <meta property="og:locale" content="en-GB">
+    <title>Home — Aldrik Ramaekers</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="canonical" href="https://aldrik.dev/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <style>
+        :root {
+            --color-text: #222;
+            --color-background: #fff;
+            --color-background-alt: #f8f8f8;
+            --color-link: #0073d5;
+            --color-highlight: #0073d5;
+            --color-mark: rgba(255, 255, 0, 0.5);
+            --font-family: "Source Code Pro", monospace
+        }
+
+        body {
+            background: var(--color-highlight);
+            color: var(--color-text);
+            font-family: var(--font-family);
+            line-height: 1.5;
+            margin: 0
+        }
+
+        a,
+        a:visited {
+            color: var(--color-link);
+            font-weight: 700
+        }
+
+        a:focus,
+        a:hover {
+            animation: gradient 5s linear infinite;
+            background-size: 200% 100%;
+            background-image: linear-gradient(to left, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787, #e40303);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent
+        }
+
+        a:focus *,
+        a:hover * {
+            background: 0 0
+        }
+
+        @keyframes gradient {
+            from {
+                background-position: 200% 0
+            }
+
+            to {
+                background-position: 0 0
+            }
+        }
+
+        code {
+            margin-right: 5px;
+        }
+
+        footer,
+        header,
+        main {
+            background: var(--color-background);
+            padding: 20px 30px
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding-top: 40px !important
+        }
+
+        nav {
+            margin-left: auto
+        }
+
+        footer a,
+        nav a {
+            margin: 0 10px
+        }
+
+        footer a:first-child,
+        nav a:first-child {
+            margin-left: 0
+        }
+
+        footer a:last-child,
+        nav a:last-child {
+            margin-right: 0
+        }
+
+        main img {
+            max-width: 100%;
+            height: auto
+        }
+
+        footer {
+            text-align: center;
+            padding-bottom: 40px !important
+        }
+
+        h1 a,
+        h1 a:visited,
+        h2 a,
+        h2 a:visited,
+        h3 a,
+        h3 a:visited {
+            color: inherit;
+            text-decoration: none
+        }
+
+        h1 a:focus::before,
+        h1 a:hover::before,
+        h2 a:focus::before,
+        h2 a:hover::before,
+        h3 a:focus::before,
+        h3 a:hover::before {
+            content: "#";
+            position: absolute;
+            margin-left: calc(-1ch - 5px);
+            padding-right: 5px;
+            color: var(--color-link)
+        }
+
+        code {
+            background: var(--color-background-alt);
+            border-radius: 4px;
+            padding: 2px 4px;
+            font-size: 1.25em
+        }
+
+        pre {
+            background: var(--color-background-alt);
+            border-radius: 5px;
+            padding: 15px
+        }
+
+        pre>code {
+            overflow-x: auto;
+            display: block;
+            border-radius: 0;
+            padding: 0;
+            font-size: .85rem
+        }
+
+        mark {
+            color: inherit;
+            background: var(--color-mark)
+        }
+
+        pre>code mark {
+            width: 100%;
+            float: left
+        }
+
+        hr {
+            border: none;
+            text-align: center
+        }
+
+        hr::after {
+            content: "~~~";
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-highlight)
+        }
+
+        ul {
+            padding-left: 20px
+        }
+
+        @media (min-width:900px) {
+            body {
+                margin: 40px 0
+            }
+
+            footer,
+            header,
+            main {
+                max-width: 700px;
+                margin: 0 auto;
+                padding: 20px 60px
+            }
+
+            header {
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px
+            }
+
+            footer {
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px
+            }
+
+            main:first-child {
+                border-radius: 5px
+            }
+
+            @font-face {
+                font-family: NotoColorEmojiLimited;
+                unicode-range: U+1F1E6-1F1FF;
+                src: url(https://raw.githack.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf);
+            }
+
+            .flags {
+                font-family: 'NotoColorEmojiLimited', -apple-system, BlinkMacSystemFont,
+                    'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+                    'Segoe UI Emoji', 'Segoe UI Symbol';
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Aldrik Ramaekers</h1>
+
+        <p>Hi! I'm Aldrik, I write software for fun.</p>
+
+        <h2 id="projects" tabindex="-1"><a class="header-anchor" href="#projects">Projects</a></h2>
+        <p>This is a list of projects I have worked on, including private and open-source projects.</p>
+        <p>View my <a href="https://github.com/aldrik-ramaekers" target="_blank" rel="noopener noreferrer">GitHub</a>
+            for the full list.</p>
+        <h3>🔒 Private</h3>
+        <ul>
+            <p><a target="_blank" rel="noopener noreferrer" href="https://exclusion-food.nl">exclusion-food.nl</a>
+                <span><span class="flags">🇳🇱 🇧🇪 🇩🇪</span> Online store selling <a target="_blank"
+                        rel="noopener noreferrer" href="https://exclusion.it">Exclusion</a> dogfood imported from Italy.
+                    <code>PHP</code><code>Symfony</code><code>HTML</code><code>JS</code><code>MySQL</code>
+            </p>
+
+            <p><a target="_blank" rel="noopener noreferrer" href="https://stekkerwereld.nl">stekkerwereld.nl</a>
+                <span><span class="flags">🇳🇱</span> In case you want to find out what outlet plug you
+                    need on vacation.<code>HTML</code><code>JS</code>
+            </p>
+        </ul>
+
+        <h3>⭐ Public</h3>
+        <ul>
+            <p><a target="_blank" rel="noopener noreferrer"
+                    href="https://github.com/aldrik-ramaekers/text-search">Text-Search</a>
+                <span>A Grep like GUI program made from scratch targeting x64 Windows, MacOS and
+                    Linux. <code>C</code><code>OpenGL</code></span>
+            </p>
+
+            <p><a target="_blank" rel="noopener noreferrer"
+                    href=" https://github.com/aldrik-ramaekers/zombies">Zombies!</a>
+                <span>A multiplayer 2D zombie shooter targeting x64 Windows.
+                    <code>C</code><code>OpenGL</code><code>SDL2</code></span>
+            </p>
+
+            <p><a target="_blank" rel="noopener noreferrer"
+                    href=" https://github.com/aldrik-ramaekers/zombies">TruckerX</a>
+                <span>A Trucking logistics management game where you are responsible for scheduling trucks as
+                    efficiently as possible. targeting x64 Windows.
+                    <code>C</code><code>OpenGL</code><code>SDL2</code></span>
+            </p>
+
+            <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/aldrik-ramaekers/dhlroute">DHL
+                    Delivery App</a>
+                <span>A mobile app I made while working as a delivery driver. Shows my delivery stops on a
+                    map and registers my hours worked. <code>Dart</code><code>Flutter</code></span>
+            </p>
+        </ul>
+
+        <h3>🌍 Contributions to Open-source projects</h3>
+        <ul>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/liballeg/allegro5">Allegro5</a>
+            (Contributions to Audio subsystem)
+        </ul>
+
+        <h2 id="contact" tabindex="-1"><a class="header-anchor" href="#contact">Contact</a></h2>
+        <ul>
+            <li>Email: <a href="mailto:aldrik.ramaekers@gmail.com">aldrik.ramaekers@gmail.com</a></li>
+            <li>Twitter/X: <a href="https://x.com/aldrrik" target="_blank" rel="noreferrer">@aldrrik</a>
+            </li>
+        </ul>
+    </main>
+    <footer><a href="mailto:aldrik.ramaekers@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+        <a href="https://github.com/aldrik-ramaekers" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.youtube.com/@aldrik" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://x.com/aldrrik" target="_blank" rel="noopener noreferrer">Twitter/X</a>
+    </footer>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&amp;display=swap"
+        as="style" onload="this.onload=null; this.rel='stylesheet'"><noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&amp;display=swap">
+    </noscript>
+</body>
+
+</html>
